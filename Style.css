@@ -36,7 +36,7 @@ h1 {
 }
 h2 {
   font-size: 0.9em;
-  font-weight: normal;
+  font-weight:bold;
   font-family: "Raleway-VariableFont_wght";
 }
 h3 {
@@ -44,7 +44,7 @@ h3 {
 }
 
 p {
-  font-size: smaller;
+  font-size: 0.7em;
   font-family: "Raleway-VariableFont_wght";
 }
 label {
@@ -73,7 +73,7 @@ label {
 .p {
   line-height: 20px;
   color: black;
-  font-size: 0.6em;
+  font-size: 0.4em;
   font-family: "Raleway";
 }
 a visited {
@@ -141,6 +141,7 @@ a:active {
   background-color: white;
   color: black;
 }
+a:activites
 .location {
   display: flex;
   justify-content: left;
@@ -164,11 +165,13 @@ a:active {
   background-color: white;
   border-radius: 20px;
   margin: 0.5em;
-  width: 30%;
+  width: 25%;
 
 }
 .hotel img {
   width: 150px;
+  display: flex;
+  align-items: center;
 }
 img.rounded-corners {
   border-radius: 15px 15px 0px 0px;
@@ -214,18 +217,16 @@ img.rounded-corners {
   border-radius: 5px;
   margin-right: 5px;
   width: 18%;
-  top: 13.9%;
-  height: 649px;
-  display: list-item;
-  justify-content: left;
-  
+  top: 18.8%;
+  height: 450px;
+  justify-content: left; 
 }
 .frameside{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: space-between;
-  width: 50%;
+  width: 30%;
 }
-
 .one {
   border: #f2f2f2 solid;
   border-style: solid;
@@ -233,9 +234,10 @@ img.rounded-corners {
   border-radius: 20px;
   margin: 0.6em;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content: center;
+  flex-direction: row;
+  justify-content: left;
+  align-items:center;
+  text-align:left;
   box-shadow: 3px 3px 3px lightgray;
 }
 .two {
@@ -246,8 +248,8 @@ img.rounded-corners {
   margin: 0.6em;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: left;
+  align-items: center;
   text-align: left;
   box-shadow: 3px 3px 3px lightgray;
 }
@@ -259,8 +261,8 @@ img.rounded-corners {
   margin: 0.6em;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: left;
+  align-items: center;
   text-align: left;
   box-shadow: 3px 3px 3px lightgray;
 }
@@ -276,12 +278,13 @@ img.corner {
   clear: left;
 }
 .container {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items:flex-start;
+
 }
 .initial {
   -webkit-flex: initial;
@@ -289,23 +292,31 @@ img.corner {
   width: 200px;
   min-width: 100px;
 }
-.section2 {
+.sectiondown {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  justify-content:flex-start;
+  flex-direction: column-reverse;
   background-color: #f2f2f2;
   margin: 10px;
   padding: 10px;
   height: 150px;
   margin-top: 20px;
 }
-.verticalleft {
+.vieux {
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   margin: 0.6em;
   box-shadow: 3px 3px 3px lightgray;
+  width:20%;
+  position: relative;
+}
+.imagebox{
+  min-width: 20%;
+  height: auto ;
+  position: relative;
+  object-fit: cover;
 }
 .fort {
   border: #f2f2f2 solid 2px;
@@ -314,6 +325,8 @@ img.corner {
   border-radius: 20px;
   margin: 0.6em;
   box-shadow: 3px 3px 3px lightgray;
+  width:20%;
+  position: relative;
 }
 .ile {
   border: #f2f2f2 solid 2px;
@@ -322,14 +335,8 @@ img.corner {
   border-radius: 20px;
   margin: 0.6em;
   box-shadow: 3px 3px 3px lightgray;
-}
-.verticalright {
-  border: #f2f2f2 solid 2px;
-  border-style: solid;
-  background-color: white;
-  border-radius: 20px;
-  margin: 0.6em;
-  box-shadow: 3px 3px 3px lightgray;
+  width:20%;
+  position: relative;
 }
 .notre {
   border: #f2f2f2 solid 2px;
@@ -338,6 +345,8 @@ img.corner {
   border-radius: 20px;
   margin: 00.6em;
   box-shadow: 3px 3px 3px lightgray;
+  width:20%;
+  position: relative;
 }
 .parc {
   border: #f2f2f2 solid 2px;
@@ -346,6 +355,17 @@ img.corner {
   border-radius: 20px;
   margin: 00.6em;
   box-shadow: 3px 3px 3px lightgray;
+  width:20%;
+  position: relative;
+}
+#verticalleft{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+#verticalright{
+  display: flex;
+  align-content: flex-start;
 }
 .fill {
   object-fit: fill;
