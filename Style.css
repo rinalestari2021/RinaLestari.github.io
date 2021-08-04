@@ -40,7 +40,7 @@ h2 {
   font-family: "Raleway-VariableFont_wght";
 }
 h3 {
-  font-size: smaller;
+  font-size: 0.8em;
 }
 
 p {
@@ -73,7 +73,7 @@ label {
 .p {
   line-height: 20px;
   color: black;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-family: "Raleway";
 }
 a visited {
@@ -147,14 +147,14 @@ a:active {
 }
 .relative {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: left;
   align-content: center;
   flex-wrap: wrap;
   top: 5%;
   background-color: #f2f2f2;
   border-radius: 10px;
-  width: 60%;
+  width: 65%;
   height: 60%;
   padding: 10px;
   position: relative;
@@ -163,11 +163,12 @@ a:active {
   border: white solid 4px;
   background-color: white;
   border-radius: 20px;
-  margin: 0.6em;
-  box-shadow: 3px 3px 3px lightgray;
+  margin: 0.5em;
+  width: 30%;
+
 }
 .hotel img {
-  width: 200px;
+  width: 150px;
 }
 img.rounded-corners {
   border-radius: 15px 15px 0px 0px;
@@ -206,19 +207,25 @@ img.rounded-corners {
 }
 .box {
   position: absolute;
-  left: 60%;
+  left: 62%;
   right: 10%;
   flex: 1.2;
   background-color: #f2f2f2;
   border-radius: 5px;
-  float: right;
-  margin-right: 20px;
-  width: 20%;
-  top: 22%;
-  height: 629px;
+  margin-right: 5px;
+  width: 18%;
+  top: 13.9%;
+  height: 649px;
   display: list-item;
   justify-content: left;
+  
 }
+.frameside{
+  display: flex;
+  flex-direction: space-between;
+  width: 50%;
+}
+
 .one {
   border: #f2f2f2 solid;
   border-style: solid;
@@ -226,10 +233,9 @@ img.rounded-corners {
   border-radius: 20px;
   margin: 0.6em;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  text-align: left;
+  align-content: center;
   box-shadow: 3px 3px 3px lightgray;
 }
 .two {
@@ -386,9 +392,13 @@ footer {
 }
 
 .star {
-  font-size: 35px;
+  font-size: 10px;
 }
 
 .filled {
-  color: red;
+  color:#0065fc;
+}
+
+.empty{
+  color: grey;
 }
