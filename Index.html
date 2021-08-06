@@ -27,7 +27,7 @@
           <nav>
             <ul>
               <li><a href="#">Hébergements</a></li>
-              <li><a href="#">Activités</a></li> <!--need to make this text in black color-->
+              <li><a href="#"><span class="todo">Activités</span></a></li> 
               <li><a href="#">S'inscrire</a></li>
             </ul>
           </nav>
@@ -35,44 +35,35 @@
       </header>
       <div id="Trouvez_votre_hébergement"></div>
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <h2>En plein centre ville ou en plein nature</h2>
-      <!--put this part in one frame-->
+      <h3>En plein centre ville ou en plein nature</h3>
       <div class="location">
-        <i class="fas fa-map-marker-alt"></i 
-        ><label
+        <!--still need to make icon mapmarker smaller-->
+        <span class="mapmarker"><i class="fas fa-map-marker-alt"></i 
+        ></span><label
           ><input
             type="search"
             id="Rechercher"
             name="location"
             placeholder="Marseille,France" /></label
-        ><button>Rechercher</button>
+        ><div><input type="search" class="button1" value="Rechercher"></div>
       </div>
-      <!--need to change the background of button rechercher into blue-->
-      <div class="item1">
-      <p>Filter</p>
-        <ul>
-          <!--icon on thumbnails should be appears before buttons-->
-          <li>
-            <i class="fas fa-money-bill-wave"></i
-            ><a href="" class="button">Economique</a>
-          </li>
-          <li>
-            <i class="fas fa-person"></i><a href="" class="button">Familial</a>
-          </li>
-          <!-- still dont appears the icon person-->
-          <li>
-            <i class="fas fa-heart"></i><a href="" class="button">Romantique</a>
-          </li>
-          <li>
-            <i class="fas fa-dog"></i
-            ><a href="" class="button">Animaux Autorises</a>
-          </li>
-        </ul>
-        <br />
+      <div class="item1"><!--icon on thumbnails should be appears before buttons-->
+      <div class="filter">
+        <h4>Filtres</h4>
+          <ul>
+            <li><span class="moneybill"><i class="fas fa-money-bill-wave"></i
+            ></span><a href="" class="button">Economique</a></li>
+            <li><span class="person"><i class="fas fa-person"></i
+            ></span><a href="" class="button">Familial</a></li>
+            <!-- still dont appears the icon person-->
+            <li><span class="heart"><i class="fas fa-heart"></i
+            ></span><a href="" class="button">Romantique</a></li>
+            <li><span class="dog"><i class="fas fa-dog"></i
+            ></span><a href="" class="button">Animaux Autorises</a></li>
+          </ul>
       </div>
-      <br />
-      <p><i class="fas fa-info-circle"></i></p>
-      <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><span class ="circle"><i class="fas fa-info-circle"></i></span>
+            Plus de 500 logements sont disponibles dans cette ville</p>
       <section>
         <div class="relative">
           <h2>Hébergements à Marseille</h2>
@@ -81,14 +72,12 @@
           <!--section_two left side top-->
           <div class="container">
             <div class="hotel">
-              <img
+              <a href="" class="link"><img
                 src="img/img-Auberge.jpg"
                 alt="hotelauberge"
                 class="rounded-corners"
-              />
-              <h3>
-                <a href="img-Auberge.jpg" class="link">Auberge La Cannebière</a>
-              </h3>
+              /></a>
+              <h3>Auberge La Cannebière</h3>
               <p>Nuit à partir de 25€</p>
               <div class="stars">
                 <span class="star filled"> &#9733; </span>
@@ -100,12 +89,12 @@
             </div>
             <br />
             <div class="hotel">
-              <img
+              <a href="" class="link"><img
                 src="img/img-Hotelduport.jpg"
                 alt="Hôtelduport"
                 class="rounded-corners"
-              />
-              <h3><a href="" class="link">Hôtel du port</a></h3>
+              /></a>
+              <h3>Hôtel du port</h3>
               <p>Nuit à partir de 52€</p>
               <div class="stars">
                 <span class="star filled"> &#9733; </span>
@@ -117,12 +106,12 @@
             </div>
             <br />
             <div class="hotel">
-              <img
+              <a href="" class="link"><img
                 src="img/img-Hotellemouttes.jpg"
                 alt="Hôtellemouttes"
                 class="rounded-corners"
-              />
-              <h3><a href="" class="link">Hôtel les mouettes</a></h3>
+              /></a>
+              <h3>Hôtel les mouettes</h3>
               <p>Nuit à partir de 76€</p>
               <div class="stars">
                 <span class="star filled"> &#9733; </span>
@@ -135,12 +124,12 @@
             <br />
             <div class="hotel">
               <!--section_two left side under-->
-              <img
+              <a href="" class="link"><img
                 src="img/img-Hoteldelamer.jpg"
                 alt="Hôteldelamer"
                 class="rounded-corners"
-              />
-              <h3><a href="" class="link">Hôtel de la mer</a></h3>
+              /></a>
+              <h3>Hôtel de la mer</h3>
               <p>Nuit à partir de 46€</p>
               <div class="stars">
                 <span class="star filled"> &#9733; </span>
@@ -152,11 +141,11 @@
             </div>
             <br />
             <div class="hotel">
-              <img
+              <a href="" class="link"><img
                 src="img/img-Aubergelepanier.jpg"
                 alt="Aubergelepanier"
                 class="rounded-corners"
-              />
+              /></a>
               <h3><a href="" class="link">Auberge le panier</a></h3>
               <p>Nuit à partir de 23€</p>
               <div class="stars">
@@ -169,11 +158,11 @@
             </div>
             <br />
             <div class="hotel">
-              <img
+              <a href="" class="link"><img
                 src="img/img-Hotelchezamina.jpg"
                 alt="Hôtelchezamina"
                 class="rounded-corners"
-              />
+              /></a>
               <h3><a href="" class="link">Hôtel chez Amina</a></h3>
               <p>Nuit à partir de 96€</p>
               <div class="stars">
@@ -195,13 +184,14 @@
             <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2> <!--need to make this icon color in black-->
             <div class="frameaside">
               <div class="one">
+                <a href="" class="link">
                 <img
                   src="img/img-Hotellesoleildumatin.jpg"
                   alt="Hôtellesoleildumatin"
                   class="corner"
-                />
+                /></a>
                 <p>
-                  <h3><a href="" class="link">Hôtel le soleil du matin</a></h3><br />
+                  <h3>Hôtel le soleil du matin</h3><br />
                    <p>Nuit à partir de 128€ </p>
                   <div class="stars">
                   <span class="star filled"> &#9733; </span>
@@ -214,13 +204,13 @@
                 <br />
               </div>
               <div class="two">
-                <img
+                <a href="" class="link"><img
                   src="img/img-Aucoeurdel'eauchambresd'hotes.jpg"
                   alt="aucoeurdleauchambresdhotes"
                   class="corner"
-                />
+                /></a>
                 <p>
-                  <h3><a href="" class="link">Au coeur de l'eau Chambres d'hôtes</a></h3><br />
+                  <h3>Au coeur de l'eau Chambres d'hôtes</h3><br />
                   <p>Nuit à partir de 71€</p>
                   <div class="stars">
                     <span class="star filled"> &#9733; </span>
@@ -233,13 +223,13 @@
                 <br />
               </div>
               <div class="three">
-                <img
+                <a href="" class="link"><img
                   src="img/img-HotelToutbleuetblanc.jpg"
                   alt="Hôteltoutbleuetblanc"
                   class="corner"
-                />
+                /></a>
                 <p>
-                  <a href="" class="link">Hôtel Tout bleu et Blanc</a><br />
+                  <h3>Hôtel Tout bleu et Blanc</h3><br />
                   <p>Nuit à partir de 68€</p>
                   <div class="stars">
                     <span class="star filled"> &#9733; </span>
@@ -260,83 +250,82 @@
         <!--section above the footer-->
         <h2>Activités à Marseille</h2><br />
           <div class="Activités">
-              <div class="vieux">
+                <div class="vieux">
                 <div class="imagebox">
-                <img
+                <a href="" class="link"><img
                 src="img/img-Vieuxport.jpg"
                 width="305"
                 height="391"
                 alt="VieuxPort"
                 class="rounded-corners"
-                />
-                <p><a href="" class="link">Vieux port</a></p>
+                /></a>
+                <h4>Vieux port</h4>
                 </div>  
-              </div> 
-              <div class="oneline">           
-              <div class="fort">
+                </div> 
+                <div class="oneline">           
+                <div class="fort">
                 <div class="imagebox">
-                <img
+                <a href="" class="link"><img
                   src="img/img-fortdePomègues.jpg"
                   width="307"
                   height="180"
                   alt="fortdepomegues"
                   class="rounded-corners"
-                  />
-                  <p><a href="" class="link">Fort de Pomègues</a></p>
+                  /></a>
+                  <h4>Fort de Pomègues</h4>
                 </div>
                 </div>
-              <br />
-              <div class="ile">
+                <br />
+                <div class="ile">
                 <div class="imagebox">
-                <img
+                <a href="" class="link"><img
                   src="img/img-IleduFrioul.jpg"
                   width="304"
                   height="112"
                   alt="ÎledeFrioulclass="
                   class="rounded-corners"
-                />
-                <p><a href="" class="link">Île de Frioul</a></p>
+                /></a>
+                <h4>Île de Frioul</h4>
                 </div>
-              </div>
-              </div>
-              <div class="parc">
+                </div>
+                </div>
+                <div class="parc">
                 <div class="imagebox">
-                <img
+                <a href="" class="link"><img
                   src="img/img-Parcnationaldescalanques.jpg"
                   width="302"
                   height="389"
                   alt="ParcNationaldesCalanques"
                   class="rounded-corners"
-                />
-                <p><a href="" class="link">Parc National des Calanques</a></p>
-              </div>
-              </div>
-              <div class="secondeline"> 
-              <div class="notre">
+                /></a>
+                <h4>Parc National des Calanques</h4>
+                </div>
+                </div>
+                <div class="secondeline"> 
+                <div class="notre">
                 <div class="imagebox">
-                <img
+                <a href="" class="link"><img
                   src="img/img-Notredamedelagarde.jpg"
                   width="300"
                   height="140"
                   alt="NotreDamedelaGarde"
                   class="rounded-corners"
-                />
-                <p><a href="" class="link">Notre-Dame-de-la-Garde</a></p>
-              </div>
-              </div>
-              <br />
-              <div class="parc">
+                /></a>
+                <h4>Notre-Dame-de-la-Garde</h4>
+                </div>
+                </div>
+                <br />
+                <div class="parc">
                 <div class="imagebox">
-                  <img
+                <a href="" class="link"><img
                   src="img/img-ParcLongchamp.jpg"
                   width="302"
                   height="152"
                   alt="ParcLongchamp"
                   class="rounded-corners"
-                />
-                  <p><a href="" class="link">Parc Longchamp</a></p>
-                </div>
-              </div>
+                /></a>
+                  <h4>Parc Longchamp</h4>
+                </div>         
           </div>
       </section>
     </div>

@@ -42,12 +42,19 @@ h1 {
 
 h2 {
   font-size: 0.9em;
-  font-weight:normal;
+  font-weight:bold;
   font-family: "Raleway-VariableFont_wght";
 }
 
 h3 {
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 0.6em;
+  font-weight: bold;
+  text-align: justify;
 }
 
 p {
@@ -62,6 +69,7 @@ label {
 
 ul i {
   color: #0065fc;
+  margin: 0;
 }
  
 .button {
@@ -70,6 +78,7 @@ ul i {
   cursor: pointer;
   align-content: center;
   font-size: 0.8em;
+
 }
 
 .button:hover {
@@ -97,6 +106,10 @@ a visited {
   color: black;
 }
 
+.todo{
+  color: black;
+} 
+
 nav {
   position: inherit;
   float: right;
@@ -115,8 +128,15 @@ a.link {
   color: black;
 }
 
+a.button {
+  border-radius: 0px 10px 10px 0px;
+  
+}
+
 .filter {
-  margin: 5px;
+  display:flex;
+ 
+  
 }
 
 .element {
@@ -130,8 +150,14 @@ a.link {
   display: block;
 }
 
-ul {
+.ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  position: relative;
   list-style: none;
+  margin-left: 10px;
+  padding-left: 2px;
 }
 
 #nav {
@@ -171,7 +197,36 @@ a:active {
 
 .location {
   display: flex;
-  justify-content: left;
+  justify-content: left;  
+}
+
+.button1 {
+  background-color: #0065fc;
+  font-family:"Raleway";
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 6px;
+  text-align: left;
+  display: inline-block;
+  width: 85px;
+  font-size: 0.7em;
+  border-radius: 0px 5px 5px 0px;
+}
+.mapmarker{
+  padding: 3px;
+  background-color: #f2f2f2;
+  border-radius: 5px 0px 0px 5px;
+} 
+
+#Rechercher {
+  font-weight: bold;
+  padding: 4px;
+  display: inline-block;
+  border-color: #f2f2f2 ;
+  width: 120px;
+  font-size: 0.7em;
+  border-radius: 0px 0px 0px 0px;
 }
 
 .relative {
@@ -214,8 +269,6 @@ img.rounded-corners {
 }
 
 .item1 {
-  margin: 10px;
-  width: 900px;
   font-family: raleway;
 }
 
@@ -224,9 +277,7 @@ img.rounded-corners {
   width: 150px;
   float: left;
   margin-left: 2px;
-  border-radius: 1px;
-  border-style: solid;
-  border-radius: 20px;
+  text-align: center;
   border-color: #f2f2f2;
 }
 
@@ -245,6 +296,18 @@ img.rounded-corners {
   color: #0065fc;
 }
 
+.moneybill,
+.person,
+.heart,
+.dog {
+  display: inline-block;
+  align-content: flex-start;
+  border: 2px #DEEBFF;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+}
+
 .box {
   flex: 1.2;
   position: absolute;
@@ -256,13 +319,15 @@ img.rounded-corners {
   width: 18%;
   top: 19.3%;
   height: 400px;
-  justify-content: left; 
-}
+  justify-content: left;
+ }
 
 .frameside{
   display: flex;
   flex-wrap:wrap;
   flex-direction: space-between;
+  width: 30%;
+  
 }
 
 .one {
@@ -342,7 +407,7 @@ img.corner {
   flex-direction:row;
   justify-content:space-around;
   align-content: center;
-  width:100%;
+  width: 100%;
   height: 100%;
 
 }
@@ -413,6 +478,7 @@ img.corner {
 }
 
 footer {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   background-color: #f2f2f2;
