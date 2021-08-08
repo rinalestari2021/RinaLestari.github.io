@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-weight: bold;
 }
 
@@ -124,13 +124,28 @@ nav {
 }
 
 a.link {
+  width: 100%;
+  object-fit: cover;
   text-decoration: none;
   color: black;
+}
+
+.newpage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 a.button {
   border-radius: 0px 10px 10px 0px;
 }
+
+.information {
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
 
 .filter {
   display:flex;
@@ -235,7 +250,7 @@ a:active {
   top: 5%;
   background-color: #f2f2f2;
   border-radius: 10px;
-  width: 65%;
+  width: 62%;
   height: 60%;
   padding: 10px;
   position: relative;
@@ -277,6 +292,7 @@ img.rounded-corners {
   margin-left: 2px;
   text-align: center;
   border-color: #f2f2f2;
+
 }
 
 .item1 a {
@@ -284,8 +300,7 @@ img.rounded-corners {
   gap: 5px;
   display: block;
   padding: 3px;
-  text-decoration: none;
-  background-color: white;
+  text-decoration: none;  
   color: black;
 }
 
@@ -306,17 +321,22 @@ img.rounded-corners {
   background-color: #DEEBFF;
 }
 
+.line{
+  margin: 8em;
+}
+
 .box {
   flex: 1.2;
   position: absolute;
-  left: 62%;
+  padding: 10px;
+  left: 60.6%;
   right: 10%;
   background-color: #f2f2f2;
-  border-radius: 5px;
-  margin-right: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
   width: 18%;
-  top: 18.7%;
-  height: 446px;
+  top: 19.1%;
+  height: 400px;
   justify-content: left;
  }
 
@@ -324,6 +344,8 @@ img.rounded-corners {
   display: flex;
   flex-wrap:wrap;
   flex-direction: space-between;  
+  object-fit: cover;
+
 }
 
 .one {
@@ -372,6 +394,7 @@ img.corner {
   border-radius: 15px 0px 0px 15px;
   width: 100%;
   height: auto;
+  
 }
 
 .section {
@@ -495,6 +518,7 @@ footer {
   float: left;
   justify-content: space-around;
   text-align: left;
+
 }
 
 @media (max-width: 600px) {
@@ -522,3 +546,4 @@ footer {
 .empty{
   color: grey;
 }
+
