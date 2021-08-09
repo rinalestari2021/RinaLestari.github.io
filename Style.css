@@ -41,23 +41,35 @@ h1 {
 }
 
 h2 {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight:bold;
   font-family: "Raleway-VariableFont_wght";
 }
 
 h3 {
-  font-size: 0.6em;
+  padding-left: 5%;
+  font-size: 0.7em;
   font-weight: bold;
+  font-family: "Raleway-VariableFont_wght";
 }
 
 h4 {
+  padding-left: 5%;
   font-size: 0.6em;
   font-weight: bold;
   text-align: justify;
+  font-family: "Raleway-VariableFont_wght";
 }
 
+h5 {
+  font-size: 0.6em;
+  font-weight: normal;
+  font-family: "Raleway-VariableFont_wght";
+}
+  
+
 p {
+  padding-left: 5%;
   font-size: 0.7em;
   font-family: "Raleway-VariableFont_wght";
 }
@@ -73,16 +85,19 @@ ul i {
 }
  
 .button {
-  text-align: center;
+  text-align: right;
+  margin-left: 15px;
   letter-spacing: 1px;
   cursor: pointer;
   align-content: center;
   font-size: 0.8em;
+  border: 3px solid #f2f2f2;
 
 }
 
 .button:hover {
-  border: 0px solid black;
+  border: 3px solid #f2f2f2;
+  border-width: 2px;
 }
 
 .button:active {
@@ -113,11 +128,8 @@ a visited {
 nav {
   position: inherit;
   float: right;
-  font-size: 1em;
-}
-
-nav {
-  text-decoration: none;
+  font-size: 0.9em;
+   text-decoration: none;
   display: flex;
   text-align: center;
   padding-top: 0.09em;
@@ -131,24 +143,25 @@ a.link {
 }
 
 .newpage {
-  width: 100%;
-  height: auto;
   object-fit: cover;
+
 }
 
 a.button {
-  border-radius: 0px 10px 10px 0px;
+  display: inline-block;
+  align-self:flex-end;
+  border-radius: 0px 20px 20px 0px;
+
 }
 
 .information {
   text-align: left;
-  margin-left: 15px;
-  margin-right: 20px;
 }
 
 
 .filter {
   display:flex;
+  align-content:flex-start;
 }
 
 .element {
@@ -164,12 +177,10 @@ a.button {
 
 .ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   margin-top: 0;
   position: relative;
   list-style: none;
-  margin-left: 10px;
-  padding-left: 2px;
 }
 
 #nav {
@@ -184,7 +195,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   justify-items: center;
 }
 
@@ -203,7 +214,6 @@ nav a {
 nav a:hover,
 a:active {
   cursor: pointer;
-  background-color: white;
   color: black;
 }
 
@@ -314,42 +324,57 @@ img.rounded-corners {
 .heart,
 .dog {
   display: inline-block;
-  align-content: flex-start;
-  border: 2px #DEEBFF;
+  vertical-align: middle;
+  border: 3px #DEEBFF;
   padding: 4px;
+  margin-left: -60px;
   border-radius: 50%;
   background-color: #DEEBFF;
+  position: absolute;
+  
 }
 
 .line{
-  margin: 8em;
+  margin: 10em;
+}
+
+.circle{
+  border: 2px solid #f2f2f2;
+  color: #0065fc;
+  padding: 5px;
+  border-radius:50%;
+}
+
+.Afficher {
+  color: black;
 }
 
 .box {
   flex: 1.2;
   position: absolute;
   padding: 10px;
-  left: 60.6%;
+  left: 60%;
   right: 10%;
   background-color: #f2f2f2;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   width: 18%;
-  top: 19.1%;
-  height: 400px;
+  top: 20%;
+  height: auto;
+  align-content: space-between;
   justify-content: left;
  }
 
 .frameside{
   display: flex;
   flex-wrap:wrap;
-  flex-direction: space-between;  
-  object-fit: cover;
+  flex-direction: space-evenly;  
+  object-fit: contain;
 
 }
 
 .one {
-  border: #f2f2f2 solid;
+  border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
   border-radius: 20px;
@@ -357,21 +382,22 @@ img.rounded-corners {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items:center;
+  align-items:left;
   text-align:left;
   box-shadow: 3px 3px 3px lightgray;
+
 }
 
 .two {
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   margin: 0.6em;
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center;
+  align-items: left;
   text-align: left;
   box-shadow: 3px 3px 3px lightgray;
 }
@@ -385,15 +411,17 @@ img.rounded-corners {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center;
+  align-items: left;
   text-align: left;
   box-shadow: 3px 3px 3px lightgray;
 }
 
 img.corner {
   border-radius: 15px 0px 0px 15px;
-  width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  object-fit: contain;
   
 }
 
@@ -444,6 +472,7 @@ img.corner {
 .imagebox {
   width: 100%; 
   object-fit:cover;
+  align-content: center;
 }
 
 .tovisit{
@@ -506,7 +535,7 @@ footer {
   justify-content: space-evenly;
   background-color: #f2f2f2;
   border: 5px solid #f2f2f2;
-  padding: 50px 2px;
+  padding: 25px 1px;
   text-align: justify;
 }
 
@@ -517,8 +546,8 @@ footer {
   width: 300px;
   float: left;
   justify-content: space-around;
-  text-align: left;
-
+  text-align: justify;
+  
 }
 
 @media (max-width: 600px) {
@@ -528,6 +557,7 @@ footer {
 }
 
 .stars {
+  padding-left: 5%;
   display: flex;
 }
 
