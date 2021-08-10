@@ -9,9 +9,7 @@
   }
 }
 
-* {
-  outline: solid 1px black;
-}
+
 
 @font-face {
   font-family: "Raleway";
@@ -238,10 +236,10 @@ a:active {
 }
 
 .button1 a:hover,
-a:disabled {
+a :disabled {
   cursor: pointer;
   color: black;
-} 
+}
 
 .mapmarker{
   padding: 3px;
@@ -307,7 +305,7 @@ img.rounded-corners {
   display: block;
   width: 150px;
   float: left;
-  margin-left: 1px;
+  margin-left: 2px;
   text-align: center;
   border-color: #f2f2f2;
 
@@ -360,11 +358,11 @@ img.rounded-corners {
 .box {
   flex: 1.2;
   position: absolute;
-  padding: 10px;
-  left: 60.6%;
+  padding: 15px;
+  left: 60%;
   right: 10%;
   background-color: #f2f2f2;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-right: 5px;
   width: 18%;
   top: 21.2%;
