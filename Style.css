@@ -81,7 +81,7 @@ ul i {
 
 .button {
   text-align: right;
-  margin-left: 20px;
+  margin-left: 5px;
   letter-spacing: 1px;
   cursor: pointer;
   align-content: center;
@@ -254,6 +254,18 @@ a :disabled {
   border-radius: 0px 0px 0px 0px;
 }
 
+ul.filters {
+  display: flex;
+}
+
+ul.filters li {
+  display: flex;
+}
+
+ul.filters li a {
+  flex-grow: 1;
+}
+
 .relative {
   display: flex;
   flex-direction: column;
@@ -299,12 +311,10 @@ img.rounded-corners {
 }
 
 .item1 li {
-  display: block;
-  width: 150px;
-  float: left;
-  margin-left: 2px;
+  list-style-type: none; /* remove dots list */
   text-align: center;
-  border-color: #f2f2f2;
+  border: solid #999292 2px;
+  border-radius: 20px;
 }
 
 .item1 a {
@@ -329,12 +339,14 @@ img.rounded-corners {
   vertical-align: center;
   border: 3px #deebff;
   padding: 8px;
-  margin-left: -70px;
   border-radius: 50%;
   background-color: #deebff;
-  position: absolute;
   width: 24px;
   height: 24px;
+  transform: scale(1.2);
+  /** Scale : ZOOM the element 
+
+  */
 }
 
 .line {
