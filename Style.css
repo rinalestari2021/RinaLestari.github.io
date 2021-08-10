@@ -326,7 +326,6 @@ img.rounded-corners {
 .heart,
 .dog {
   display: inline-block;
-  vertical-align: center;
   border: 3px #deebff;
   padding: 8px;
   margin-left: -70px;
