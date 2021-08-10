@@ -9,8 +9,6 @@
   }
 }
 
-
-
 @font-face {
   font-family: "Raleway";
   src: url("Fonts/Raleway-VariableFont_wght.ttf") format("truetype"),
@@ -40,7 +38,7 @@ h1 {
 
 h2 {
   font-size: 0.8em;
-  font-weight:bold;
+  font-weight: bold;
   font-family: "Raleway-VariableFont_wght";
 }
 
@@ -64,7 +62,6 @@ h5 {
   font-weight: normal;
   font-family: "Raleway-VariableFont_wght";
 }
-  
 
 p {
   padding-left: 5%;
@@ -81,7 +78,7 @@ ul i {
   color: #0065fc;
   margin: 0;
 }
- 
+
 .button {
   text-align: right;
   margin-left: 20px;
@@ -90,7 +87,6 @@ ul i {
   align-content: center;
   font-size: 0.8em;
   border: 2px solid #f2f2f2;
-
 }
 
 .button:hover {
@@ -119,9 +115,9 @@ a visited {
   color: black;
 }
 
-.todo{
+.todo {
   color: black;
-} 
+}
 
 nav {
   position: inherit;
@@ -142,24 +138,26 @@ a.link {
 
 .newpage {
   object-fit: cover;
-
 }
 
 a.button {
   display: inline-block;
-  align-self:flex-end;
+  align-self: flex-end;
   border-radius: 0px 15px 15px 0px;
-
 }
 
 .information {
   text-align: left;
 }
 
-
 .filter {
-  display:flex;
-  align-content:flex-start;
+  display: flex;
+  align-items: center;
+  /* align-content: flex-start; */
+}
+
+.nopadding {
+  padding: 0;
 }
 
 .element {
@@ -217,12 +215,12 @@ a:active {
 
 .location {
   display: flex;
-  justify-content: left;  
+  justify-content: left;
 }
 
 .button1 {
   background-color: #0065fc;
-  font-family:"Raleway";
+  font-family: "Raleway";
   font-weight: bold;
   border: none;
   color: white;
@@ -232,7 +230,6 @@ a:active {
   width: 85px;
   font-size: 0.7em;
   border-radius: 0px 5px 5px 0px;
-  
 }
 
 .button1 a:hover,
@@ -241,17 +238,17 @@ a :disabled {
   color: black;
 }
 
-.mapmarker{
+.mapmarker {
   padding: 3px;
   background-color: #f2f2f2;
   border-radius: 5px 0px 0px 5px;
-} 
+}
 
 #Rechercher {
   font-weight: bold;
   padding: 4px;
   display: inline-block;
-  border-color: #f2f2f2 ;
+  border-color: #f2f2f2;
   width: 120px;
   font-size: 0.7em;
   border-radius: 0px 0px 0px 0px;
@@ -308,7 +305,6 @@ img.rounded-corners {
   margin-left: 2px;
   text-align: center;
   border-color: #f2f2f2;
-
 }
 
 .item1 a {
@@ -316,7 +312,7 @@ img.rounded-corners {
   gap: 5px;
   display: block;
   padding: 3px;
-  text-decoration: none;  
+  text-decoration: none;
   color: black;
 }
 
@@ -331,24 +327,25 @@ img.rounded-corners {
 .dog {
   display: inline-block;
   vertical-align: center;
-  border: 3px #DEEBFF;
+  border: 3px #deebff;
   padding: 8px;
   margin-left: -70px;
   border-radius: 50%;
-  background-color: #DEEBFF;
+  background-color: #deebff;
   position: absolute;
- 
+  width: 24px;
+  height: 24px;
 }
 
-.line{
+.line {
   margin: 10em;
 }
 
-.circle{
+.circle {
   border: 2px solid #f2f2f2;
   color: #0065fc;
   padding: 5px;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .Afficher {
@@ -369,14 +366,13 @@ img.rounded-corners {
   height: auto;
   align-content: space-between;
   justify-content: left;
- }
+}
 
-.frameside{
+.frameside {
   display: flex;
-  flex-wrap:wrap;
-  flex-direction: space-evenly;  
+  flex-wrap: wrap;
+  flex-direction: space-evenly;
   object-fit: contain;
-
 }
 
 .one {
@@ -388,10 +384,9 @@ img.rounded-corners {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items:left;
-  text-align:left;
+  align-items: left;
+  text-align: left;
   box-shadow: 3px 3px 3px lightgray;
-
 }
 
 .two {
@@ -429,7 +424,6 @@ img.corner {
   padding: 2px;
   object-fit: contain;
   vertical-align: sub;
-  
 }
 
 .section {
@@ -448,7 +442,7 @@ img.corner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .initial {
@@ -458,11 +452,11 @@ img.corner {
   min-width: 100px;
 }
 
-.Activités{
+.Activités {
   width: 900px;
   display: flex;
-  flex-direction:row;
-  justify-content:space-around;
+  flex-direction: row;
+  justify-content: space-around;
   align-content: center;
 }
 
@@ -477,14 +471,13 @@ img.corner {
 }
 
 .imagebox {
-  width: 100%; 
-  object-fit:cover;
+  width: 100%;
+  object-fit: cover;
   align-content: center;
 }
 
-.tovisit{
+.tovisit {
   display: inline-block;
-
 }
 
 .fort {
@@ -553,7 +546,6 @@ footer {
   float: left;
   justify-content: space-around;
   text-align: justify;
-  
 }
 
 @media (max-width: 600px) {
@@ -576,11 +568,9 @@ footer {
 }
 
 .filled {
-  color:#0065fc;
+  color: #0065fc;
 }
 
-.empty{
+.empty {
   color: grey;
 }
-
-
