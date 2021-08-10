@@ -129,6 +129,11 @@ nav {
   padding-top: 0.09em;
 }
 
+/** HOVER */
+nav ul li a:hover {
+  border-top: solid 2px blue;
+}
+
 a.link {
   width: 100%;
   object-fit: cover;
