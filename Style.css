@@ -80,17 +80,15 @@ ul i {
 }
 
 .button {
-  text-align: right;
-  margin-left: 5px;
+  text-align: left;
+  margin-left: 2px;
   letter-spacing: 1px;
   cursor: pointer;
   align-content: center;
-  font-size: 0.8em;
-  border: 2px solid #f2f2f2;
+  font-size: 0.9em;
 }
 
 .button:hover {
-  border: 2px solid #f2f2f2;
   border-width: 1px;
 }
 
@@ -126,12 +124,13 @@ nav {
   text-decoration: none;
   display: flex;
   text-align: center;
-  padding-top: 0.09em;
+  padding-top: 1em;
 }
 
 /** HOVER */
 nav ul li a:hover {
-  border-top: solid 2px blue;
+  border-top: solid 2px #0065fc;
+  padding-top: 1.3em;
 }
 
 a.link {
@@ -147,8 +146,7 @@ a.link {
 
 a.button {
   display: inline-block;
-  align-self: flex-end;
-  border-radius: 0px 15px 15px 0px;
+  align-self: center;
 }
 
 .information {
@@ -158,6 +156,8 @@ a.button {
 .filter {
   display: flex;
   align-items: center;
+  align-content: flex-start;
+  gap: 15px;
   /* align-content: flex-start; */
 }
 
@@ -261,14 +261,17 @@ a :disabled {
 
 ul.filters {
   display: flex;
+  gap: 30px;
 }
 
 ul.filters li {
   display: flex;
+  gap: 30px;
 }
 
 ul.filters li a {
   flex-grow: 1;
+  gap: 30px;
 }
 
 .relative {
@@ -316,7 +319,7 @@ img.rounded-corners {
 }
 
 .item1 li {
-  list-style-type: none; /* remove dots list */
+  list-style-type: none;
   text-align: center;
   border: solid #999292 2px;
   border-radius: 20px;
@@ -341,12 +344,13 @@ img.rounded-corners {
 .heart,
 .dog {
   display: inline-block;
-  border: 3px #deebff;
+  border: 2px #deebff;
   padding: 8px;
   border-radius: 50%;
   background-color: #deebff;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
+  align-content: center;
   transform: scale(1.2);
   /** Scale : ZOOM the element 
 
@@ -360,11 +364,13 @@ img.rounded-corners {
 .circle {
   border: 2px solid #f2f2f2;
   color: #0065fc;
-  padding: 5px;
-  border-radius: 50%;
+  padding: 10px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
 }
 
-.Afficher {
+i.fas fa-info .Afficher {
   color: black;
 }
 
