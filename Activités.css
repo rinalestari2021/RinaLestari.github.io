@@ -1,0 +1,68 @@
+.tovisit {
+  display: inline-block;
+}
+
+.Activités {
+  width: 900px;
+  margin-left: -8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.vieux {
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.imagebox {
+  width: 100%;
+  object-fit: cover;
+  align-content: center;
+}
+
+.fort {
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.ile {
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.notre {
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 00.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.parc {
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 00.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
