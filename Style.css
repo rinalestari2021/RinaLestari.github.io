@@ -350,6 +350,7 @@ ul.filters li a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: auto;
 }
 
 .initial {

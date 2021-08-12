@@ -4,12 +4,12 @@
   justify-content: left;
   align-content: center;
   flex-wrap: wrap;
-  top: 5%;
+
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 62%;
-  height: 60%;
-  padding: 10px;
+  height: auto;
+  padding: 1px;
   position: relative;
 }
 
