@@ -4,7 +4,6 @@
   justify-content: left;
   align-content: center;
   flex-wrap: wrap;
-
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 62%;
@@ -71,4 +70,8 @@ img.rounded-corners {
 
 .empty {
   color: grey;
+}
+
+.Hébergements {
+  margin: 2em;
 }
