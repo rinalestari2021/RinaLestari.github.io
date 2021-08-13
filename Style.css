@@ -429,3 +429,9 @@ footer {
     display: inline;
   }
 }
+
+/* TIPS from gautier */
+
+.big-container {
+  display: flex;
+}

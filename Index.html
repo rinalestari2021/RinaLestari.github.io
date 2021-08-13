@@ -85,8 +85,10 @@
           Plus de 500 logements sont disponibles dans cette ville
         </h5>
       </div>
-      <section>
-        <div class="relative">
+      <!-- you have to create parent with section and aside inside -->
+      <div class="big-container">
+        <!-- i removed div who was the only child of section and put relative class directly on section -->
+        <section class="relative">
           <h2><span class="Hébergements">Hébergements à Marseille</span></h2>
           <div style="display: flex"></div>
           <div class="initial"></div>
@@ -200,15 +202,12 @@
                 <span class="star filled"> &#9733; </span>
               </div>
             </div>
-            <br />
           </div>
           <h3><a href="AfficherPlus" class="link"> Afficher plus</a></h3>
-        </div>
-        <br />
-      </section>
-      <aside>
-        <!--the right side vertical line-->
-        <div class="box">
+        </section>
+        <!-- i removed div who was the only child of aside and put box class directly on aside -->
+        <aside class="box">
+          <!--the right side vertical line-->
           <!--still need to make it stay still dont move up down-->
           <h2>
             <span class="lespluspopulaires">Les plus populaires</span>
@@ -274,8 +273,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
 
       <div class="tovisit">
         <h2><span class="Marseille">Activités à Marseille</span></h2>
