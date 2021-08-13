@@ -256,7 +256,7 @@ a :disabled {
 
 #Rechercher {
   font-weight: bold;
-  padding: 4px;
+  padding: 3px;
   display: inline-block;
   border-color: #f2f2f2;
   width: 120px;
@@ -317,9 +317,31 @@ ul.filters li a {
   height: 21px;
   align-content: center;
   transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   /** Scale : ZOOM the element 
-
   */
+}
+
+.moneybill :hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.person :hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.heart :hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.dog :hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .infocircle {
@@ -350,7 +372,7 @@ ul.filters li a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: auto;
+  width: 50%;
 }
 
 .initial {
@@ -367,24 +389,39 @@ ul.filters li a {
 footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #f2f2f2;
   text-align: justify;
   overflow: hidden;
 }
 
+.containerfooter {
+  width: 900px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .column1of3,
 .column2of3,
 .column3of3 {
-  justify-content: center;
-  width: 300px;
+  justify-content: space-evenly;
+  width: 255px;
   height: auto;
   display: flex;
   line-height: 5px;
   margin-top: 10px;
+  margin-left: 0px;
   flex-direction: column;
   justify-content: left;
   text-align: justify;
+}
+
+.p a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
