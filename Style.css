@@ -65,7 +65,7 @@ h5 {
 
 p {
   padding-left: 5%;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-family: "Raleway-VariableFont_wght";
 }
 
@@ -138,10 +138,6 @@ a.link {
   object-fit: cover;
   text-decoration: none;
   color: black;
-}
-
-.newpage {
-  object-fit: cover;
 }
 
 a.button {
@@ -292,7 +288,7 @@ ul.filters li a {
 
 .item1 a {
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 2px;
   display: block;
   padding: 3px;
   text-decoration: none;
@@ -387,14 +383,8 @@ ul.filters li a {
 }
 
 footer {
-  /*need to fix the footer*/
-  position: absolute;
+  margin-top: 15px;
   width: 100%;
-  margin-top: 5em;
-  left: 0;
-  bottom: 0;
-  height: 2.5em;
-  padding-bottom: 8em;
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2;
@@ -403,7 +393,7 @@ footer {
 }
 
 .containerfooter {
-  width: 100%;
+  width: 900px;
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
@@ -420,7 +410,7 @@ footer {
   display: flex;
   line-height: 5px;
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 0px;
   flex-direction: column;
   justify-content: left;
   text-align: justify;
