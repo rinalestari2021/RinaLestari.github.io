@@ -46,6 +46,23 @@ img.rounded-corners {
   align-items: flex-start;
 }
 
+/**
+  * Media querie for smart phone
+  */
+@media (max-width: 600px) {
+  .hotel {
+    width: 100%;
+  }
+
+  .big-container {
+    flex-direction: column;
+  }
+
+  aside {
+    order: -1; /* work because it's a flex child */
+  }
+}
+
 .Afficherplus {
   color: black;
   text-decoration: none;

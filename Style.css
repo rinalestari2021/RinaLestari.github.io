@@ -425,14 +425,12 @@ footer {
   text-decoration: none;
 }
 
+.big-container {
+  display: flex;
+}
+
 @media (max-width: 600px) {
   nav li {
     display: inline;
   }
-}
-
-/* TIPS from gautier */
-
-.big-container {
-  display: flex;
 }
