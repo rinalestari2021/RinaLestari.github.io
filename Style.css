@@ -388,12 +388,11 @@ footer {
   background-color: #f2f2f2;
   bottom: auto;
   left: 0px;
-
   text-align: center;
 }
 
 .containerfooter {
-  width: 900px;
+  width: 50%;
   margin-left: 300px;
   margin-right: 5px;
   display: flex;
@@ -404,16 +403,21 @@ footer {
 .column1of3,
 .column2of3,
 .column3of3 {
-  justify-content: space-between;
-  width: 255px;
+  justify-content: space-around;
+  width: 180px;
   height: auto;
   display: flex;
   line-height: 3px;
   margin-top: 10px;
-  margin-left: 0px;
+  margin-left: auto;
   flex-direction: column;
   justify-content: left;
   text-align: justify;
+}
+
+.column1of3 {
+  margin-left: 10px;
+  width: 200px;
 }
 
 .p a:hover {
