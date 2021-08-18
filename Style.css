@@ -102,7 +102,7 @@ ul i {
 }
 
 .p {
-  line-height: 20px;
+  line-height: 15px;
   color: black;
   font-size: 0.4em;
   font-family: "Raleway";
@@ -383,32 +383,32 @@ ul.filters li a {
 }
 
 footer {
-  margin-top: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  min-width: 100%;
+  position: absolute;
   background-color: #f2f2f2;
-  text-align: justify;
-  overflow: hidden;
+  bottom: auto;
+  left: 0px;
+
+  text-align: center;
 }
 
 .containerfooter {
   width: 900px;
-  margin-left: 5px;
+  margin-left: 300px;
   margin-right: 5px;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .column1of3,
 .column2of3,
 .column3of3 {
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 255px;
   height: auto;
   display: flex;
-  line-height: 5px;
+  line-height: 3px;
   margin-top: 10px;
   margin-left: 0px;
   flex-direction: column;
