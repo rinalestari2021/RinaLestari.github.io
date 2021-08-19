@@ -1,5 +1,6 @@
 .tovisit {
   display: inline-block;
+  width: 900px;
 }
 
 .oneline {
@@ -7,15 +8,90 @@
 }
 
 .Activités {
-  width: 900px;
-  margin-left: -8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 5vw);
+  gap: 15px;
 }
 
 .vieux {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 5;
+
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.fort {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+/*need to set this element same with element on the left */
+.ile {
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.parc {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.notre {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: -5;
+  grid-row-end: -6;
+
+  border: #f2f2f2 solid 2px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.6em;
+  box-shadow: 3px 3px 3px lightgray;
+  position: relative;
+}
+
+.parcvertical {
+  grid-row-start: -7;
+  grid-row-end: -8;
+
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
@@ -29,46 +105,6 @@
   width: 100%;
   object-fit: cover;
   align-content: center;
-}
-
-.fort {
-  border: #f2f2f2 solid 2px;
-  border-style: solid;
-  background-color: white;
-  border-radius: 20px;
-  margin: 0.6em;
-  box-shadow: 3px 3px 3px lightgray;
-  position: relative;
-}
-
-.ile {
-  border: #f2f2f2 solid 2px;
-  border-style: solid;
-  background-color: white;
-  border-radius: 20px;
-  margin: 0.6em;
-  box-shadow: 3px 3px 3px lightgray;
-  position: relative;
-}
-
-.notre {
-  border: #f2f2f2 solid 2px;
-  border-style: solid;
-  background-color: white;
-  border-radius: 20px;
-  margin: 0.6em;
-  box-shadow: 3px 3px 3px lightgray;
-  position: relative;
-}
-
-.parc {
-  border: #f2f2f2 solid 2px;
-  border-style: solid;
-  background-color: white;
-  border-radius: 20px;
-  margin: 0.6em;
-  box-shadow: 3px 3px 3px lightgray;
-  position: relative;
 }
 
 .Marseille {

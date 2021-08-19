@@ -1,0 +1,16 @@
+#bloc_page {
+  width: 60%;
+  margin: auto;
+}
+@media screen and (max-width: 780px) {
+  #bloc_page {
+    margin: auto;
+    width: 98%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav li {
+    display: inline;
+  }
+}

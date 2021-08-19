@@ -1,13 +1,4 @@
-#bloc_page {
-  width: 60%;
-  margin: auto;
-}
-@media screen and (max-width: 780px) {
-  #bloc_page {
-    margin: auto;
-    width: 98%;
-  }
-}
+/*Main Elements of the page */
 
 @font-face {
   font-family: "Raleway";
@@ -113,71 +104,35 @@ a visited {
   color: black;
 }
 
-.todo {
-  color: black;
+/*Menu nav */
+
+#header {
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
-  position: inherit;
-  float: right;
-  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1em;
   text-decoration: none;
-  display: flex;
   text-align: center;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
-/** HOVER */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-content: flex-end;
+}
+
 nav ul li a:hover {
   border-top: solid 2px #0065fc;
   padding-top: 1.3em;
 }
 
-a.link {
-  width: 100%;
-  object-fit: cover;
-  text-decoration: none;
+.todo {
   color: black;
-}
-
-a.button {
-  display: inline-block;
-  align-self: center;
-}
-
-.information {
-  text-align: left;
-}
-
-.filter {
-  display: flex;
-  align-items: center;
-  align-content: flex-start;
-  gap: 15px;
-  /* align-content: flex-start; */
-}
-
-.nopadding {
-  padding: 0;
-}
-
-.element {
-  background-color: #f2f2f2;
-  border-radius: 25px;
-  margin: 20px;
-  padding: 10px 10px;
-  width: 100px;
-  height: 100px;
-  box-sizing: content-box;
-  display: block;
-}
-
-.ul {
-  display: flex;
-  justify-content: left;
-  margin-top: 0;
-  position: relative;
-  list-style: none;
 }
 
 #nav {
@@ -204,6 +159,7 @@ nav a {
   text-align: center;
   font-size: 1em;
   text-decoration: none;
+  padding: 15px 15px;
   background-color: #fff;
   color: #0065fc;
 }
@@ -212,6 +168,49 @@ nav a:hover,
 a:active {
   cursor: pointer;
   color: black;
+}
+
+a.link {
+  width: 100%;
+  object-fit: cover;
+  text-decoration: none;
+  color: black;
+}
+
+a.button {
+  display: inline-block;
+  align-self: center;
+}
+
+/*Element Filters */
+.filter {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  gap: 15px;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.element {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 10px 10px;
+  width: 100px;
+  height: 100px;
+  box-sizing: content-box;
+  display: block;
+}
+
+.ul {
+  display: flex;
+  justify-content: left;
+  margin-top: 0;
+  position: relative;
+  list-style: none;
 }
 
 .location {
@@ -262,17 +261,21 @@ a :disabled {
 
 ul.filters {
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 ul.filters li {
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 ul.filters li a {
   flex-grow: 1;
-  gap: 30px;
+  gap: 25px;
+}
+
+ul.filters {
+  text-align: center;
 }
 
 .item1 {
@@ -316,8 +319,6 @@ ul.filters li a {
   -webkit-transform: scale(1.2);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  /** Scale : ZOOM the element 
-  */
 }
 
 .moneybill :hover {
@@ -382,6 +383,7 @@ ul.filters li a {
   object-fit: fill;
 }
 
+/*Element Footer*/
 footer {
   min-width: 100%;
   position: absolute;
@@ -427,10 +429,4 @@ footer {
 
 .big-container {
   display: flex;
-}
-
-@media (max-width: 600px) {
-  nav li {
-    display: inline;
-  }
 }

@@ -73,23 +73,24 @@ img.corner {
   clear: left;
 }
 
-.line {
-  margin: 80px;
-}
-
-.textchart {
-  margin: 5px;
-}
-
-.populaires {
-  text-align: start;
-}
-
 .information {
   text-align: start;
   margin: 0;
 }
 
+/* still need to put line chart position at the end on the right side*/
+.textchart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .lespluspopulaires {
-  margin: 5px;
+  margin: auto;
+}
+
+.line {
+  margin: auto;
 }
