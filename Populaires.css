@@ -81,10 +81,10 @@ img.corner {
 /* still need to put line chart position at the end on the right side*/
 .textchart {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-content: space-between;
   margin-left: 5%;
-  margin-right: 5%;
 }
 
 .lespluspopulaires {
@@ -92,5 +92,5 @@ img.corner {
 }
 
 .line {
-  margin: auto;
+  margin: 60px;
 }
