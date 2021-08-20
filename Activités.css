@@ -1,6 +1,8 @@
 .tovisit {
   display: inline-block;
   width: 900px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .oneline {
@@ -9,6 +11,7 @@
 
 .Activités {
   display: grid;
+  grid-area: all;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 5vw);
   gap: 15px;

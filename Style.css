@@ -1,4 +1,8 @@
 /*Main Elements of the page */
+#bloc_page {
+  width: 60%;
+  margin: auto;
+}
 
 @font-face {
   font-family: "Raleway";
@@ -49,7 +53,7 @@ h4 {
 }
 
 h5 {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: normal;
   font-family: "Raleway-VariableFont_wght";
 }
@@ -259,6 +263,7 @@ a :disabled {
   border-radius: 0px 0px 0px 0px;
 }
 
+/*Filters*/
 ul.filters {
   display: flex;
   gap: 25px;
@@ -341,6 +346,7 @@ ul.filters {
   transform: scale(1.2);
 }
 
+/*Info*/
 .infocircle {
   color: #0065fc;
   background-color: #fff;
@@ -365,6 +371,7 @@ ul.filters {
   border-radius: 5px;
 }
 
+/*Section Hebergements*/
 .section {
   display: flex;
   flex-direction: row;
@@ -390,12 +397,13 @@ footer {
   background-color: #f2f2f2;
   bottom: auto;
   left: 0px;
+  margin-top: 20px;
   text-align: center;
 }
 
 .containerfooter {
   width: 50%;
-  margin-left: 300px;
+  margin-left: 250px;
   margin-right: 5px;
   display: flex;
   justify-content: space-around;
@@ -405,7 +413,7 @@ footer {
 .column1of3,
 .column2of3,
 .column3of3 {
-  justify-content: space-around;
+  justify-content: space-between;
   width: 180px;
   height: auto;
   display: flex;
@@ -415,11 +423,6 @@ footer {
   flex-direction: column;
   justify-content: left;
   text-align: justify;
-}
-
-.column1of3 {
-  margin-left: 10px;
-  width: 200px;
 }
 
 .p a:hover {

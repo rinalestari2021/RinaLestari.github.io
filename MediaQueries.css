@@ -1,7 +1,5 @@
-#bloc_page {
-  width: 60%;
-  margin: auto;
-}
+/*Main Elements of the page */
+
 @media screen and (max-width: 780px) {
   #bloc_page {
     margin: auto;
@@ -12,5 +10,116 @@
 @media (max-width: 600px) {
   nav li {
     display: inline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h3 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    font-size: 1.2em;
+    align-content: space-around;
+  }
+}
+
+/* Element Hebergement & Populaires */
+@media (max-width: 600px) {
+  .hotel {
+    width: 100%;
+  }
+
+  .big-container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  aside {
+    order: -1;
+  }
+
+  .relative {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  img.rounded-corners {
+    width: auto;
+  }
+}
+
+/* Element Populaires */
+@media only screen and (max-width: 600px) {
+  aside.box {
+    display: flex;
+    padding: 0;
+    margin-left: 0;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  img.corner {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: 0;
+  }
+
+  .information {
+    width: 60%;
+    margin: 0;
+    align-content: flex-start;
+    line-height: normal;
+  }
+
+  .textchart {
+    display: flex;
+    align-content: space-evenly;
+  }
+}
+
+/* Element Activities */
+@media only screen and (max-width: 600px) {
+  .tovisit {
+    width: 100%;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-content: flex-start;
+  }
+}
+
+/* Footer */
+@media only screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    padding: 0;
+    margin-top: 250px;
+    float: none;
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .containerfooter {
+    width: 55%;
+    flex-direction: column;
+    align-self: start;
+    justify-content: left;
+    margin-left: 0;
+  }
+
+  .column1of3,
+  .column2of3,
+  .column3of3 {
+    width: 100%;
+    margin-left: 10%;
   }
 }
