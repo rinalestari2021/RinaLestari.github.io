@@ -1,4 +1,4 @@
-/*Main Elements of the page */
+/*Main Elements of the page, header */
 
 @media screen and (max-width: 780px) {
   #bloc_page {
@@ -14,15 +14,63 @@
 }
 
 @media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    text-align: left;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li:first-child {
+    position: relative;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .img {
+    margin: 5%;
+  }
+
+  h1 {
+    font-size: 1.3em;
+    text-align: justify;
+    margin: 5%;
+  }
+
   h3 {
     font-size: 1em;
   }
 }
 
+@media only screen and (min-width: 600px) {
+  input.loupe {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  input.button1 {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .info {
+    margin-left: 5%;
     font-size: 1.2em;
     align-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
   }
 }
 
@@ -46,10 +94,18 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
   }
 
   img.rounded-corners {
     width: auto;
+  }
+
+  .Hébergements {
+    font-size: 1.5em;
+    margin-left: 5%;
   }
 }
 
@@ -81,11 +137,13 @@
 
   .textchart {
     display: flex;
-    align-content: space-evenly;
+    align-content: space-between;
+    font-size: 1.5em;
+    margin-left: 5%;
   }
 }
 
-/* Element Activities */
+/* Element Activités */
 @media only screen and (max-width: 600px) {
   .tovisit {
     width: 100%;
@@ -94,6 +152,11 @@
   .grid {
     flex-direction: column;
     align-content: flex-start;
+  }
+
+  .Marseille {
+    font-size: 1.5em;
+    margin-left: 5%;
   }
 }
 
