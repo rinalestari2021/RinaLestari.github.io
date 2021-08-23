@@ -46,17 +46,21 @@
       </header>
       <div id="Trouvez_votre_hébergement"></div>
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <h2>En plein centre ville ou en plein nature</h2>
+      <h5>En plein centre ville ou en plein nature</h5>
       <div class="location">
         <span class="mapmarker"
           ><i class="fas fa-map-marker-alt" style="font-size: 0.8em"></i></span
         ><label
           ><input type="search" id="Rechercher" name="location" placeholder=""
         /></label>
-        <div>
+        <span class="search">
           <input type="search" class="button1" value="Rechercher" />
-          <input id="image" class="loupe" src="/img/loupe.png" />
-        </div>
+          <span
+              class="loupe">
+              <i class="fa fa-search"></i>
+          </span
+          ></a>
+        </span>
       </div>
       <div class="item1">
         <div class="filter">
@@ -83,12 +87,12 @@
           </ul>
         </div>
         <div class="info">
-          <h5>
+          <h6>
             <span class="infocircle">
               <i class="fa fa-info"></i>
             </span>
             Plus de 500 logements sont disponibles dans cette ville
-          </h5>
+          </h6>
         </div>
       </div>
 
@@ -289,7 +293,8 @@
                   width="305"
                   height="391"
                   alt="VieuxPort"
-                  class="rounded-corners"
+                  class="images"
+                  class="mobilesize"
               /></a>
               <h4>Vieux port</h4>
             </div>
@@ -303,7 +308,7 @@
                     width="307"
                     height="180"
                     alt="fortdepomegues"
-                    class="rounded-corners"
+                    class="images"
                 /></a>
                 <h4>Fort de Pomègues</h4>
               </div>
@@ -317,8 +322,8 @@
                     width="304"
                     height="112"
                     alt="ÎledeFrioulclass="
-                    class="rounded-corners"
-                /></a>
+                    class="images"
+                  /></a>
                 <h4>Île de Frioul</h4>
               </div>
             </div>
@@ -331,8 +336,8 @@
                   width="302"
                   height="389"
                   alt="ParcNationaldesCalanques"
-                  class="rounded-corners"
-              /></a>
+                  class="images"
+                /></a>
               <h4>Parc National des Calanques</h4>
             </div>
           </div>
@@ -345,7 +350,7 @@
                     width="300"
                     height="140"
                     alt="NotreDamedelaGarde"
-                    class="rounded-corners"
+                    class="images"
                 /></a>
                 <h4>Notre-Dame-de-la-Garde</h4>
               </div>
@@ -359,7 +364,7 @@
                     width="302"
                     height="152"
                     alt="ParcLongchamp"
-                    class="rounded-corners"
+                    class="images"
                 /></a>
                 <h4>Parc Longchamp</h4>
               </div>
@@ -368,7 +373,6 @@
         </div>
 
         <footer>
-          <!--need to adjust the width of background footer-->
           <div class="containerfooter">
             <div class="column1of3">
               <h3>A propos</h3>

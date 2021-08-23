@@ -58,6 +58,12 @@ h5 {
   font-family: "Raleway-VariableFont_wght";
 }
 
+h6 {
+  font-size: 0.9em;
+  font-weight: normal;
+  font-family: "Raleway-VariableFont_wght";
+}
+
 p {
   padding-left: 5%;
   font-size: 0.8em;
@@ -186,37 +192,7 @@ a.button {
   align-self: center;
 }
 
-/*Element Filters */
-.filter {
-  display: flex;
-  align-items: center;
-  align-content: flex-start;
-  gap: 15px;
-}
-
-.nopadding {
-  padding: 0;
-}
-
-.element {
-  background-color: #f2f2f2;
-  border-radius: 25px;
-  margin: 20px;
-  padding: 10px 10px;
-  width: 100px;
-  height: 100px;
-  box-sizing: content-box;
-  display: block;
-}
-
-.ul {
-  display: flex;
-  justify-content: left;
-  margin-top: 0;
-  position: relative;
-  list-style: none;
-}
-
+/*Element location rechercher */
 .location {
   display: flex;
   justify-content: left;
@@ -261,6 +237,37 @@ a :disabled {
   width: 120px;
   font-size: 0.7em;
   border-radius: 0px 0px 0px 0px;
+}
+
+/*Element Filters */
+.filter {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  gap: 15px;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.element {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 10px 10px;
+  width: 100px;
+  height: 100px;
+  box-sizing: content-box;
+  display: block;
+}
+
+.ul {
+  display: flex;
+  justify-content: left;
+  margin-top: 0;
+  position: relative;
+  list-style: none;
 }
 
 /*Filters*/

@@ -17,6 +17,12 @@
   gap: 15px;
 }
 
+.images {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0px 0px;
+}
+
 .vieux {
   grid-column-start: 1;
   grid-column-end: 1;
