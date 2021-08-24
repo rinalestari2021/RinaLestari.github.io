@@ -116,6 +116,10 @@
   align-content: center;
 }
 
+.mobilesize {
+  display: none;
+}
+
 .Marseille {
   margin: 0.5em;
 }

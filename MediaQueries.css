@@ -14,25 +14,55 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .logo {
-    margin: 5%;
+  #logo {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  #Header {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
   }
 
   nav {
-    display: flex;
-    text-align: left;
+    display: inline;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left: 5%;
+    align-content: space-between;
     width: 100%;
   }
 
   nav ul {
-    flex-direction: row;
+    float: left;
+    position: relative;
+    left: -40%;
+    align-content: space-between;
   }
 
-  nav li:first-child {
-    position: relative;
-    align-items: flex-start;
+  nav a {
+    font-size: 1.1em;
+    padding: 40px 40px;
+    align-content: flex-start;
+  }
+
+  nav ul li a:hover {
+    border-bottom: solid 3px #0065fc;
+    border-top: 0;
+    padding-top: 0;
+    padding-bottom: 1.2em;
+  }
+
+  nav ul:nth-child(3) {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;
   }
 }
+
+/*Main Elements of the font, logo */
 
 @media only screen and (max-width: 600px) {
   .img {
@@ -62,6 +92,8 @@
     margin: 5%;
   }
 }
+
+/*Main Elements of rechercher*/
 
 @media only screen and (min-width: 600px) {
   .loupe {
@@ -95,7 +127,7 @@
   .mapmarker {
     width: 45px;
     height: 45px;
-    font-size: 2em;
+    font-size: 1.5em;
     align-items: center;
     border-radius: 15px 0px 0px 15px;
   }
@@ -104,6 +136,7 @@
     width: 230px;
     height: 100%;
     font-size: 1em;
+    border: 2px solid #f2f2f2;
   }
 
   .loupe {
@@ -112,10 +145,11 @@
     color: white;
     background-color: #0065fc;
     border-radius: 15px;
-    width: 51px;
-    height: 51px;
-    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    font-size: 1.1em;
     align-items: center;
+    margin-left: -15%;
   }
 }
 
@@ -126,10 +160,14 @@
   }
 
   h6 {
+    margin-right: 5%;
     font-size: 1.1em;
     font-weight: normal;
+    text-align: justify;
   }
 }
+
+/*Main Elements of the filter */
 
 @media only screen and (max-width: 600px) {
   .filter {
@@ -146,6 +184,38 @@
     flex-direction: column;
     justify-content: left;
     align-content: left;
+  }
+
+  .item1 li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid #f2f2f2 1px;
+  }
+
+  .item1 a {
+    font-size: 0.8em;
+  }
+
+  .moneybill,
+  .person,
+  .heart,
+  .dog {
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+  }
+
+  .item1 li:nth-child(1) {
+    width: 100%;
+    height: auto;
+  }
+
+  .item1 li:nth-child(2) {
+    align-self: flex-end;
   }
 }
 
@@ -198,16 +268,19 @@
 
   img.corner {
     width: 100%;
-    height: auto;
+    height: 124px;
     align-items: center;
     margin: 0;
+    object-fit: contain;
+    vertical-align: sub;
+    border-radius: 15px 0px 0px 15px;
   }
 
   .information {
     width: 60%;
     margin: 0;
+    line-height: 20px;
     align-content: flex-start;
-    line-height: normal;
   }
 
   .textchart {
@@ -218,7 +291,8 @@
   }
 
   .line {
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 }
 
@@ -242,8 +316,10 @@
     margin-left: 5%;
   }
 
-  .mobilesize {
-    width: 336px;
+  .images {
+    object-fit: cover;
+    align-content: center;
+    width: 334px;
     height: 134px;
     border-radius: 15px 15px 0px 0px;
   }
@@ -254,7 +330,7 @@
   footer {
     display: flex;
     padding: 0;
-    margin-top: 250px;
+    margin-top: 20px;
     float: none;
     width: 100%;
     font-size: 1.2em;
@@ -273,5 +349,6 @@
   .column3of3 {
     width: 100%;
     margin-left: 10%;
+    line-height: 3px;
   }
 }
