@@ -14,31 +14,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #logo {
-    margin-left: 5%;
-    margin-top: 5%;
-  }
-
-  #Header {
+  header {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
   }
 
   nav {
-    display: inline;
-    flex-direction: column;
-    margin-top: 20%;
-    margin-left: 5%;
-    align-content: space-between;
     width: 100%;
-  }
-
-  nav ul {
-    float: left;
-    position: relative;
-    left: -40%;
-    align-content: space-between;
   }
 
   nav a {
@@ -47,18 +30,11 @@
     align-content: flex-start;
   }
 
-  nav ul li a:hover {
+  nav a:hover {
     border-bottom: solid 3px #0065fc;
     border-top: 0;
     padding-top: 0;
     padding-bottom: 1.2em;
-  }
-
-  nav ul:nth-child(3) {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    height: 80px;
   }
 }
 

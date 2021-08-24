@@ -118,53 +118,34 @@ a visited {
 
 /*Menu nav */
 
-#header {
+header {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 nav {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-grow: 1;
   font-size: 1em;
   text-decoration: none;
   text-align: center;
   padding-top: 0.5em;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  align-content: flex-end;
-}
-
-nav ul li a:hover {
+nav a:hover {
   border-top: solid 2px #0065fc;
   padding-top: 1.3em;
 }
 
 .todo {
   color: black;
-}
-
-#nav {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  width: 8em;
-  margin-top: -2.5em;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  justify-items: center;
-}
-
-nav li {
-  margin-right: 15px;
 }
 
 nav a {
