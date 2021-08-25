@@ -1,20 +1,17 @@
 .tovisit {
   display: inline-block;
-  width: 900px;
+  position: relative;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-
-.oneline {
   justify-content: space-between;
 }
 
 .Activités {
   display: grid;
-  grid-area: all;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 5vw);
-  gap: 15px;
+  gap: 5px;
+  justify-content: space-around;
 }
 
 .images {
@@ -24,88 +21,63 @@
 }
 
 .vieux {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 5;
-
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
   border-radius: 20px;
-  margin: 0.6em;
+  margin: 0.5em;
   box-shadow: 3px 3px 3px lightgray;
   position: relative;
 }
 
 .fort {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
   border-radius: 20px;
-  margin: 0.6em;
+  margin: 0.5em;
   box-shadow: 3px 3px 3px lightgray;
   position: relative;
 }
 
 /*need to set this element same with element on the left */
 .ile {
-  grid-row-start: 2;
-  grid-row-end: 4;
-
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
   border-radius: 20px;
-  margin: 0.6em;
+  margin: 0.5em;
   box-shadow: 3px 3px 3px lightgray;
   position: relative;
+  align-self: stretch;
 }
 
 .parc {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 5;
-
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
   border-radius: 20px;
-  margin: 0.6em;
+  margin: 0.5em;
   box-shadow: 3px 3px 3px lightgray;
   position: relative;
 }
 
 .notre {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: -5;
-  grid-row-end: -6;
-
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
   border-radius: 20px;
-  margin: 0.6em;
+  margin: 0.5em;
   box-shadow: 3px 3px 3px lightgray;
   position: relative;
 }
 
 .parcvertical {
-  grid-row-start: -7;
-  grid-row-end: -8;
-
   border: #f2f2f2 solid 2px;
   border-style: solid;
   background-color: white;
   border-radius: 20px;
-  margin: 0.6em;
+  margin: 0.5em;
   box-shadow: 3px 3px 3px lightgray;
   position: relative;
 }

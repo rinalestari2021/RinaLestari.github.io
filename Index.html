@@ -29,16 +29,19 @@
   <body>
     <div id="bloc_page">
       <header>
+        <div class="navbar">
           <img src="logo.png" alt="logo" class="logo" />
           <nav class="flex">
             <a href="#">Hébergements</a>
             <a href="#"><span class="todo">Activités</span></a>
             <a href="#">S'inscrire</a>
           </nav>
+        </div>
       </header>
-      <div id="Trouvez_votre_hébergement"></div>
+      <div class="Trouvez_votre_hébergement">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <h5>En plein centre ville ou en plein nature</h5>
+      </div>
       <div class="location">
         <span class="mapmarker"
           ><i class="fas fa-map-marker-alt" style="font-size: 0.8em"></i></span
@@ -60,24 +63,27 @@
           <ul class="nopadding filters">
             <li>
               <span class="moneybill"
-                ><i class="fas fa-money-bill-wave"></i
-              ></span>
+              ><i class="fas fa-money-bill-wave"></i></span>
               <a href="" class="button"><h2>Economique</h2></a>
             </li>
             <li>
-              <span class="person"><i class="fa fa-child"></i></span
-              ><a href="" class="button"> <h2>Familial</h2></a>
+              <span class="person"
+              ><i class="fa fa-child"></i></span
+              ><a href="" class="button"><h2>Familial</h2></a>
             </li>
             <li>
-              <span class="heart"><i class="fas fa-heart"></i></span
+              <span class="heart"
+              ><i class="fas fa-heart"></i></span
               ><a href="" class="button"><h2>Romantique</h2></a>
             </li>
             <li>
-              <span class="dog"><i class="fas fa-dog"></i></span
+              <span class="dog"
+              ><i class="fas fa-dog"></i></span
               ><a href="" class="button"><h2>Animaux Autorises</h2></a>
             </li>
           </ul>
         </div>
+        
         <div class="info">
           <h6>
             <span class="infocircle">
@@ -206,10 +212,8 @@
         <aside class="box">
           <!--the right side vertical line-->
           <div class="textchart">
-            <h2>
-              <span class="lespluspopulaires">Les plus populaires</span>
-              <span class="line"><i class="fas fa-chart-line"></i></span>
-            </h2>
+              <div class="lespluspopulaires"><h2>Les plus populaires</h2></div>
+              <div class="line"><i class="fas fa-chart-line"></i></div>
           </div>
           <div class="one">
             <a href="" class="populaires"
@@ -219,7 +223,6 @@
                 class="corner"
             /></a>
             <div class="information">
-              <p></p>
               <h3>Hôtel le soleil du matin</h3>
               <p>Nuit à partir de 128€</p>
               <div class="stars">
@@ -239,7 +242,6 @@
                 class="corner"
             /></a>
             <div class="information">
-              <p></p>
               <h3>Au coeur de l'eau Chambres d'hôtes</h3>
               <p>Nuit à partir de 71€</p>
               <div class="stars">
@@ -259,7 +261,6 @@
                 class="corner"
             /></a>
             <div class="information">
-              <p></p>
               <h3>Hôtel Tout bleu et Blanc</h3>
               <p>Nuit à partir de 68€</p>
               <div class="stars">
@@ -366,8 +367,9 @@
 
       </div>
     </div>
+
     <footer>
-      <div class="containerfooter">
+    <div class="containerfooter">
         <div class="column1of3">
           <h3>A propos</h3>
           <p><a href="#" class="link">Fonctionnement du site</a></p>

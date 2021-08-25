@@ -78,19 +78,16 @@ img.corner {
   margin: 0;
 }
 
-/* still need to put line chart position at the end on the right side*/
 .textchart {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-content: space-between;
-  margin-left: 5%;
-}
-
-.lespluspopulaires {
-  margin: auto;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 8px;
+  margin-top: 5px;
 }
 
 .line {
-  margin: 60px;
+  margin-right: 24px;
 }
